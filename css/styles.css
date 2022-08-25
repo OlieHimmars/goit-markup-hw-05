@@ -91,7 +91,7 @@ body {
     display: block;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     
     width: 100%;
     height: 4px;
@@ -269,8 +269,10 @@ img {
 .what-we-do-subtext {
     position: absolute;
     bottom: 0;
-    display: block;
-    padding-top: 27px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     height: 70px;
     width: 100%;
@@ -638,7 +640,7 @@ img {
 
     background-color: rgba(0, 0, 0, 0.2);
 
-    transition: opacity 250ms var(--timing-function );
+    transition: opacity 250ms var(--timing-function ), visibility 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -672,6 +674,7 @@ img {
     top: 8px;
     right: 8px;
     display: block;
+    cursor: pointer;
     
     border: none;
     background-color: transparent;
